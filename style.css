@@ -1,0 +1,401 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #012970;
+  cursor: pointer;
+  transition: all .3s ease 0s;
+}
+
+a:hover {
+  color: #0140ad;
+}
+
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+
+
+.section-header {
+  padding: 5px 20px;
+  font-size: 25px;
+}
+
+.section-header span {
+  color: #0156e9;
+}
+
+
+.slider-btn {
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  background: #f6f9ff;
+  border-radius: 50px;
+  border: 1px solid #e1ecff;
+  transition: all 300ms linear 0s;
+}
+
+.slider-btn:hover {
+  border-color: #012970;
+}
+
+.slider-btn::after {
+  font-size: 20px;
+  font-weight: 700;
+  color: #012970;
+}
+
+.slider-arrow {
+  top: 30px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  margin: 0px -25px;
+}
+
+
+.swiper-button-prev {
+  right: 60px;
+  left: unset;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+
+
+.team {
+  padding: 60px 0;
+}
+
+.team .member {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 25px;
+  background: #fff;
+  transition: 0.3s;
+  border: 1px solid #cce7d0;
+  margin: 15px;
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .member-img:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../img/team-shape.svg) no-repeat center bottom;
+  background-size: contain;
+  z-index: 1;
+}
+
+.team .member .member-info {
+  padding: 10px 15px 30px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #012970;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #5e5e5e;
+}
+
+.team .member .social {
+  padding: 15px 0 0;
+  transition: 0.5s;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: rgba(1, 41, 112, 0.5);
+  margin: 15px 8px;
+  line-height: 0;
+  text-align: center;
+}
+
+.team .member .social a:hover {
+  color: rgba(1, 41, 112, 0.8);
+}
+
+.team .member .social i {
+  font-size: 18px;
+}
+
+.team .member:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* signup to newsletter footer starts */
+
+footer.main {
+  background: #f6f9ff;
+}
+
+.newsletter {
+  padding: 30px;
+  background: #f6f9ff;
+  border-top: 1px solid #e1ecff;
+}
+
+.newsletter .flex-horizontal-center {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter .icon-email {
+  max-width: 40px;
+  margin-right: 15px;
+  transition: all .3s ease 0s;
+}
+
+.newsletter h4 {
+  font-size: 18px;
+  color: #222222;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.newsletter h5 {
+  font-size: 14px;
+  color: #222222;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.newsletter h5 strong {
+  font-size: 15px;
+}
+
+
+.newsletter .form-subcriber input {
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #e1ecff;
+  border-right: none;
+  padding: 0 20px 0 30px;
+  font-size: 14px;
+  box-shadow: none;
+  height: 48px;
+}
+
+.newsletter .form-subcriber button {
+  border-radius: 0 4px 4px 0;
+  border: 0;
+  font-size: 14px;
+  padding: 0 30px;
+  box-shadow: none;
+  letter-spacing: 0.5px;
+  transition: all 300ms linear 0s;
+}
+
+.newsletter .form-subcriber button:hover{
+  background-color: #012970 !important;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.5);
+}
+
+@media only screen and (max-width: 480px) {
+
+  .newsletter .des {
+      display: none;
+  }
+
+  .newsletter form {
+      margin: 15px 0;
+  }
+
+  .newsletter .form-subcriber input {
+      padding: 0 12px 0 18px;
+      height: 42px;
+  }
+
+  .newsletter .form-subcriber button {
+      letter-spacing: 0.2px;
+      padding: 0 18px;
+  }
+}
+
+
+/* signup to newsletter ends  */
+
+
+/* middle footer starts  */
+
+footer .section-padding {
+  padding: 25px 0;
+  background: white url(../img/footer-bg.png) no-repeat right top;
+  background-size: contain;
+  border-top: 1px solid #e1ecff;
+  border-bottom: 1px solid #e1ecff;
+}
+
+@media (max-width: 992px) {
+  footer .section-padding {
+    background-position: center bottom;
+  }
+}
+
+footer .footer-mid {
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.footer-mid .widget-about {
+  font-size: 15px;
+}
+
+.logo.logo-width-1 {
+  margin-right: 123px;
+}
+
+.logo.logo-width-1 a img {
+  width: 120px;
+  min-width: 120px;
+}
+
+.widget-about h5 {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color: #464545;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.widget-about p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 5px;
+  
+}
+
+.widget-about p strong {
+  font-weight: 600;
+}
+
+.widget-about .mobile-social-icon a {
+  text-align: center;
+  font-size: 14px;
+  margin-right: 5px;
+  transition-duration: 0.5s;
+}
+
+.widget-about .mobile-social-icon a img {
+  max-width: 20px;
+  opacity: 0.7;
+}
+
+.widget-about .mobile-social-icon a:hover img {
+  opacity: 1;
+}
+
+.footer-mid .widget-title {
+  margin: 15px 0 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-mid .footer-list {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-mid .footer-list li {
+  display: block;
+  margin: 0 0 13px;
+  transition-duration: 0.3s;
+}
+
+.footer-mid .footer-list li a {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.footer-mid .footer-list li a:hover{
+  padding-left: 5px;
+}
+
+.install-apps p{
+  margin-bottom: 18px;
+}
+
+.install-apps .download-app {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 25px 0;
+}
+
+.install-apps .download-app a {
+  margin-right: 12px;
+}
+
+.install-apps .download-app .app_store {
+  margin-bottom: 0.5rem;
+}
+
+.install-apps .download-app a img {
+  width: 170px;
+  border-radius: 10px;
+  border: 2px solid #e2e9e1;
+  transition: all 500ms linear 0s;
+}
+
+.download-app a img:hover {
+  /* border: 2px solid #012970; */
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.5);
+}
+
+.copyright-area {
+  padding: 20px 0;
+}
+
+.copyright-area .copyright {
+  padding-bottom: 15px;
+}
+
+.copyright-area .copyright, .credits {
+  text-align: center;
+  color: #222222;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+  footer .col-lg-2.col-md-3 {
+      width: 50%;
+  }
+
+  .mb-sm-5 {
+      margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo.logo-width-1 {
+      margin-right: 0;
+  }
+}
+
+
+/* middle footer ends  */
+
